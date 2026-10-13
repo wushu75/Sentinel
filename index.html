@@ -1,11 +1,50 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Sentinel UK</title>
+<title>Sentinel UK — AI Cyber Defence for Britain</title>
+<meta name="description" content="Britain's first AI-powered cyber defence platform. Real-time threat detection, deepfake defence, and automated compliance for UK businesses. Built on UK soil.">
+<meta name="keywords" content="UK cybersecurity, AI cyber defence, threat detection, deepfake defence, Cyber Essentials, UK GDPR, NIS2, SME cybersecurity, British cybersecurity platform, NCSC, AI security">
+<meta name="author" content="Sentinel UK">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://wushu75.github.io/Sentinel/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sentinel UK — AI Cyber Defence for Britain">
+<meta property="og:description" content="The UK's first unified AI platform that detects threats, blocks deepfakes, and keeps your business compliant. See the live demo.">
+<meta property="og:url" content="https://wushu75.github.io/Sentinel/">
+<meta property="og:site_name" content="Sentinel UK">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sentinel UK — AI Cyber Defence for Britain">
+<meta name="twitter:description" content="Real-time AI threat detection, deepfake defence, automated compliance. Built for UK businesses, hosted on UK soil.">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Sentinel UK",
+  "applicationCategory": "SecurityApplication",
+  "description": "AI-powered cyber defence platform built for UK businesses. Real-time threat detection, deepfake defence, and automated compliance.",
+  "operatingSystem": "Cloud-based",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/PreOrder"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Sentinel UK",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB",
+      "addressLocality": "London"
+    }
+  }
+}
+</script>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <style>
-/* Sentinel UK — Full interactive pitch experience
-   Dark-first, single-page: Hero → Live Demo → Pitch
-   Three sections linked by smooth scroll */
-
 :root {
   --midnight: #060C18;
   --deep: #0A1224;
@@ -14,533 +53,258 @@
   --card-hover: #1A2840;
   --border: #1A2A40;
   --border-light: #243650;
-
   --teal: #00E4B8;
   --teal-mid: #00C49E;
   --teal-dim: rgba(0,228,184,0.15);
   --teal-glow: rgba(0,228,184,0.06);
   --teal-strong: rgba(0,228,184,0.25);
-
   --amber: #FFB83D;
   --amber-dim: rgba(255,184,61,0.15);
   --red: #FF4D6A;
   --red-dim: rgba(255,77,106,0.15);
   --blue: #4D8EFF;
   --blue-dim: rgba(77,142,255,0.12);
-
   --heading: #EDF2F7;
   --body: #8E9BB3;
   --muted: #556278;
-
   --font: 'Outfit', system-ui, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, monospace;
-
   color-scheme: dark;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
-
-/* Light mode tokens */
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
-    --midnight: #F4F6FA; --deep: #FFFFFF; --panel: #FFFFFF; --card: #EEF1F6;
-    --card-hover: #E4E8F0; --border: #D8DEE8; --border-light: #C4CCD8;
-    --teal: #009B7D; --teal-mid: #00876D; --teal-dim: rgba(0,155,125,0.1);
-    --teal-glow: rgba(0,155,125,0.05); --teal-strong: rgba(0,155,125,0.18);
-    --amber: #C47A00; --amber-dim: rgba(196,122,0,0.1);
-    --red: #D42848; --red-dim: rgba(212,40,72,0.1);
-    --blue: #2868D4; --blue-dim: rgba(40,104,212,0.08);
-    --heading: #14202E; --body: #4A5A70; --muted: #7A8A9E;
-    color-scheme: light;
+    --midnight:#F4F6FA;--deep:#FFF;--panel:#FFF;--card:#EEF1F6;--card-hover:#E4E8F0;--border:#D8DEE8;--border-light:#C4CCD8;--teal:#009B7D;--teal-mid:#00876D;--teal-dim:rgba(0,155,125,.1);--teal-glow:rgba(0,155,125,.05);--teal-strong:rgba(0,155,125,.18);--amber:#C47A00;--amber-dim:rgba(196,122,0,.1);--red:#D42848;--red-dim:rgba(212,40,72,.1);--blue:#2868D4;--blue-dim:rgba(40,104,212,.08);--heading:#14202E;--body:#4A5A70;--muted:#7A8A9E;color-scheme:light;
   }
 }
 :root[data-theme="light"] {
-  --midnight: #F4F6FA; --deep: #FFFFFF; --panel: #FFFFFF; --card: #EEF1F6;
-  --card-hover: #E4E8F0; --border: #D8DEE8; --border-light: #C4CCD8;
-  --teal: #009B7D; --teal-mid: #00876D; --teal-dim: rgba(0,155,125,0.1);
-  --teal-glow: rgba(0,155,125,0.05); --teal-strong: rgba(0,155,125,0.18);
-  --amber: #C47A00; --amber-dim: rgba(196,122,0,0.1);
-  --red: #D42848; --red-dim: rgba(212,40,72,0.1);
-  --blue: #2868D4; --blue-dim: rgba(40,104,212,0.08);
-  --heading: #14202E; --body: #4A5A70; --muted: #7A8A9E;
-  color-scheme: light;
+  --midnight:#F4F6FA;--deep:#FFF;--panel:#FFF;--card:#EEF1F6;--card-hover:#E4E8F0;--border:#D8DEE8;--border-light:#C4CCD8;--teal:#009B7D;--teal-mid:#00876D;--teal-dim:rgba(0,155,125,.1);--teal-glow:rgba(0,155,125,.05);--teal-strong:rgba(0,155,125,.18);--amber:#C47A00;--amber-dim:rgba(196,122,0,.1);--red:#D42848;--red-dim:rgba(212,40,72,.1);--blue:#2868D4;--blue-dim:rgba(40,104,212,.08);--heading:#14202E;--body:#4A5A70;--muted:#7A8A9E;color-scheme:light;
 }
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; }
-html { scroll-behavior: smooth; }
-body {
-  background: var(--midnight);
-  color: var(--body);
-  font-family: var(--font);
-  font-size: 15px;
-  line-height: 1.6;
-  padding: 0;
-}
-
-/* ── Utility ── */
-.container { max-width: 1100px; margin: 0 auto; padding-inline: 20px; }
-.section { padding: 80px 0; }
+*,*::before,*::after{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--midnight);color:var(--body);font-family:var(--font);font-size:15px;line-height:1.6;padding:0}
+.container{max-width:1100px;margin:0 auto;padding-inline:20px}
+.section{padding:80px 0}
 
 /* ── NAV ── */
-.topnav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  padding: 14px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba(6,12,24,0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border);
-  transition: background 0.3s;
-}
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
-.nav-logo-text { font-weight: 700; font-size: 16px; color: var(--heading); }
-.nav-logo-sub { font-size: 8.5px; font-weight: 600; color: var(--teal); letter-spacing: 0.14em; text-transform: uppercase; display: block; line-height: 1; margin-top: 1px; }
-.nav-links { display: flex; gap: 6px; }
-.nav-link {
-  font-size: 13px; font-weight: 500; color: var(--muted);
-  text-decoration: none; padding: 6px 14px; border-radius: 6px;
-  transition: color 0.2s, background 0.2s;
-}
-.nav-link:hover { color: var(--heading); background: var(--card); }
-.nav-cta {
-  font-size: 12px; font-weight: 600; color: var(--midnight);
-  background: var(--teal); padding: 7px 18px; border-radius: 7px;
-  text-decoration: none; transition: opacity 0.2s; border: none; cursor: pointer;
-  font-family: var(--font);
-}
-.nav-cta:hover { opacity: 0.88; }
+.topnav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;background:rgba(6,12,24,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-text{font-weight:700;font-size:16px;color:var(--heading)}
+.nav-logo-sub{font-size:8.5px;font-weight:600;color:var(--teal);letter-spacing:.14em;text-transform:uppercase;display:block;line-height:1;margin-top:1px}
+.nav-links{display:flex;gap:6px;align-items:center}
+.nav-link{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;padding:6px 14px;border-radius:6px;transition:color .2s,background .2s}
+.nav-link:hover{color:var(--heading);background:var(--card)}
+.nav-cta{font-size:12px;font-weight:600;color:var(--midnight);background:var(--teal);padding:7px 18px;border-radius:7px;text-decoration:none;transition:opacity .2s;border:none;cursor:pointer;font-family:var(--font)}
+.nav-cta:hover{opacity:.88}
 
 /* ── HERO ── */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  padding-top: 60px;
-}
-.hero-bg {
-  position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(0,228,184,0.06) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 80% 20%, rgba(77,142,255,0.04) 0%, transparent 60%);
-}
-.hero-grid {
-  position: absolute; inset: 0; opacity: 0.03;
-  background-image:
-    linear-gradient(var(--teal) 1px, transparent 1px),
-    linear-gradient(90deg, var(--teal) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-.hero-content {
-  position: relative; text-align: center;
-  max-width: 720px; padding-inline: 20px;
-}
-.hero-shield {
-  width: 72px; height: 72px; margin: 0 auto 28px;
-  animation: float 6s ease-in-out infinite;
-}
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-.hero h1 {
-  font-size: clamp(36px, 6vw, 56px);
-  font-weight: 800;
-  color: var(--heading);
-  line-height: 1.1;
-  margin-bottom: 20px;
-  letter-spacing: -0.02em;
-  text-wrap: balance;
-}
-.hero h1 .accent { color: var(--teal); }
-.hero-sub {
-  font-size: clamp(16px, 2.2vw, 19px);
-  color: var(--body);
-  max-width: 540px;
-  margin: 0 auto 36px;
-  line-height: 1.6;
-  font-weight: 400;
-}
-.hero-cta {
-  display: inline-flex; align-items: center; gap: 10px;
-  font-family: var(--font);
-  font-size: 16px; font-weight: 600;
-  color: var(--midnight); background: var(--teal);
-  padding: 14px 32px; border-radius: 10px;
-  border: none; cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  text-decoration: none;
-  box-shadow: 0 0 40px rgba(0,228,184,0.2);
-}
-.hero-cta:hover { transform: translateY(-2px); box-shadow: 0 0 60px rgba(0,228,184,0.3); }
-.hero-cta svg { width: 18px; height: 18px; }
-.hero-stats {
-  display: flex; justify-content: center; gap: 40px;
-  margin-top: 56px; padding-top: 32px;
-  border-top: 1px solid var(--border);
-}
-.hero-stat-val {
-  font-family: var(--mono); font-size: 28px; font-weight: 700;
-  color: var(--heading); display: block;
-}
-.hero-stat-label { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding-top:60px}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 40%,rgba(0,228,184,.06) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 80% 20%,rgba(77,142,255,.04) 0%,transparent 60%)}
+.hero-grid{position:absolute;inset:0;opacity:.03;background-image:linear-gradient(var(--teal) 1px,transparent 1px),linear-gradient(90deg,var(--teal) 1px,transparent 1px);background-size:60px 60px}
+/* Particles canvas */
+#particleCanvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-content{position:relative;text-align:center;max-width:720px;padding-inline:20px}
+.hero-shield{width:80px;height:80px;margin:0 auto 28px;animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.hero h1{font-size:clamp(36px,6vw,56px);font-weight:800;color:var(--heading);line-height:1.1;margin-bottom:20px;letter-spacing:-.02em;text-wrap:balance}
+.hero h1 .accent{color:var(--teal)}
+.hero-sub{font-size:clamp(16px,2.2vw,19px);color:var(--body);max-width:540px;margin:0 auto 36px;line-height:1.6;font-weight:400}
+.hero-cta{display:inline-flex;align-items:center;gap:10px;font-family:var(--font);font-size:16px;font-weight:600;color:var(--midnight);background:var(--teal);padding:14px 32px;border-radius:10px;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;text-decoration:none;box-shadow:0 0 40px rgba(0,228,184,.2)}
+.hero-cta:hover{transform:translateY(-2px);box-shadow:0 0 60px rgba(0,228,184,.3)}
+.hero-cta svg{width:18px;height:18px}
+.hero-stats{display:flex;justify-content:center;gap:40px;margin-top:56px;padding-top:32px;border-top:1px solid var(--border);flex-wrap:wrap}
+.hero-stat-val{font-family:var(--mono);font-size:28px;font-weight:700;color:var(--heading);display:block}
+.hero-stat-label{font-size:12px;color:var(--muted);margin-top:2px}
 
-/* ── DEMO SECTION ── */
-#demo { background: var(--deep); border-top: 1px solid var(--border); }
-.demo-header { text-align: center; margin-bottom: 48px; }
-.demo-header h2 {
-  font-size: clamp(24px, 4vw, 34px); font-weight: 700;
-  color: var(--heading); margin-bottom: 10px; text-wrap: balance;
-}
-.demo-header p { color: var(--body); max-width: 520px; margin: 0 auto; font-size: 15px; }
+/* ── DEMO ── */
+#demo{background:var(--deep);border-top:1px solid var(--border)}
+.demo-header{text-align:center;margin-bottom:48px}
+.demo-header h2{font-size:clamp(24px,4vw,34px);font-weight:700;color:var(--heading);margin-bottom:10px;text-wrap:balance}
+.demo-header p{color:var(--body);max-width:520px;margin:0 auto;font-size:15px}
+.demo-shell{background:var(--panel);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 20px 80px rgba(0,0,0,.3)}
+.demo-toolbar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--border)}
+.demo-toolbar-left{display:flex;align-items:center;gap:10px}
+.demo-dots{display:flex;gap:6px}
+.demo-dot{width:10px;height:10px;border-radius:50%}
+.demo-dot.r{background:#FF5F57}.demo-dot.y{background:#FEBC2E}.demo-dot.g{background:#28C840}
+.demo-toolbar-title{font-size:12px;color:var(--muted);font-weight:500;margin-left:8px}
+.demo-status{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--teal)}
+.demo-status-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.demo-content{display:grid;grid-template-columns:1fr 360px;min-height:520px}
+@media(max-width:768px){.demo-content{grid-template-columns:1fr}}
+.demo-main{padding:20px;display:flex;flex-direction:column;gap:16px}
+.demo-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:500px){.demo-stats{grid-template-columns:1fr}}
+.demo-stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.demo-stat-label{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.demo-stat-num{font-family:var(--mono);font-size:26px;font-weight:700;color:var(--heading);line-height:1}
+.demo-stat-num.teal{color:var(--teal)}.demo-stat-num.amber{color:var(--amber)}.demo-stat-num.red{color:var(--red)}
+.demo-stat-sub{font-size:11px;color:var(--muted);margin-top:4px}
 
-/* Demo dashboard mock */
-.demo-shell {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 20px 80px rgba(0,0,0,0.3);
-}
-.demo-toolbar {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 12px 20px;
-  background: var(--card);
-  border-bottom: 1px solid var(--border);
-}
-.demo-toolbar-left { display: flex; align-items: center; gap: 10px; }
-.demo-dots { display: flex; gap: 6px; }
-.demo-dot { width: 10px; height: 10px; border-radius: 50%; }
-.demo-dot.r { background: #FF5F57; }
-.demo-dot.y { background: #FEBC2E; }
-.demo-dot.g { background: #28C840; }
-.demo-toolbar-title { font-size: 12px; color: var(--muted); font-weight: 500; margin-left: 8px; }
-.demo-status {
-  display: flex; align-items: center; gap: 6px;
-  font-size: 11px; font-weight: 600; color: var(--teal);
-}
-.demo-status-dot {
-  width: 6px; height: 6px; border-radius: 50%; background: var(--teal);
-  animation: pulse 2s ease-in-out infinite;
-}
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+/* Scan area */
+.sim-area{flex:1;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;min-height:260px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.sim-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.sim-title{font-size:13px;font-weight:600;color:var(--heading)}
+.sim-badge{font-family:var(--mono);font-size:10px;font-weight:600;padding:3px 10px;border-radius:10px;background:var(--teal-dim);color:var(--teal)}
+.sim-badge.scanning{animation:pulse 1.5s ease-in-out infinite}
+.scan-visual{flex:1;position:relative;display:flex;align-items:center;justify-content:center}
+.scan-ring{width:180px;height:180px;border-radius:50%;border:2px solid var(--border);position:relative;display:flex;align-items:center;justify-content:center}
+.scan-ring::before{content:'';position:absolute;inset:-2px;border-radius:50%;border:2px solid transparent;border-top-color:var(--teal);animation:scanSpin 2s linear infinite}
+@keyframes scanSpin{to{transform:rotate(360deg)}}
+.scan-ring::after{content:'';position:absolute;inset:12px;border-radius:50%;border:1px solid var(--border)}
+.scan-center{font-family:var(--mono);font-size:32px;font-weight:700;color:var(--teal);z-index:1}
+.scan-center-label{font-size:10px;color:var(--muted);text-align:center;font-family:var(--font);font-weight:500;margin-top:2px}
+.scan-blip{position:absolute;width:8px;height:8px;border-radius:50%;opacity:0;animation:blipIn .4s ease-out forwards}
+@keyframes blipIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+.scan-blip::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid;animation:blipRing 1.5s ease-out infinite;opacity:.5}
+@keyframes blipRing{from{transform:scale(1);opacity:.5}to{transform:scale(2.5);opacity:0}}
+.scan-blip.threat{background:var(--red)}.scan-blip.threat::after{border-color:var(--red)}
+.scan-blip.blocked{background:var(--teal)}.scan-blip.blocked::after{border-color:var(--teal)}
+.scan-blip.warn{background:var(--amber)}.scan-blip.warn::after{border-color:var(--amber)}
 
-.demo-content {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  min-height: 500px;
-}
-@media (max-width: 768px) {
-  .demo-content { grid-template-columns: 1fr; }
-}
+/* Alert feed */
+.demo-feed{border-left:1px solid var(--border);display:flex;flex-direction:column}
+@media(max-width:768px){.demo-feed{border-left:none;border-top:1px solid var(--border)}}
+.demo-feed-header{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.demo-feed-title{font-size:13px;font-weight:600;color:var(--heading)}
+.demo-feed-count{font-family:var(--mono);font-size:11px;font-weight:600;background:var(--red-dim);color:var(--red);padding:2px 8px;border-radius:8px;min-width:28px;text-align:center}
+.demo-feed-list{flex:1;overflow-y:auto;padding:8px 0}
+.alert-item{display:flex;gap:10px;padding:10px 18px;border-bottom:1px solid var(--border);animation:alertSlideIn .5s ease-out;cursor:pointer;transition:background .15s}
+.alert-item:hover{background:var(--card-hover)}
+@keyframes alertSlideIn{from{transform:translateX(30px);opacity:0}to{transform:translateX(0);opacity:1}}
+.alert-sev{width:3px;border-radius:2px;flex-shrink:0;min-height:36px}
+.alert-sev.critical{background:var(--red)}.alert-sev.high{background:var(--amber)}.alert-sev.medium{background:var(--blue)}.alert-sev.low{background:var(--teal)}
+.alert-body{flex:1;min-width:0}
+.alert-title-text{font-size:12px;font-weight:550;color:var(--heading);line-height:1.3}
+.alert-meta{font-size:10px;color:var(--muted);margin-top:2px;display:flex;gap:8px}
+.alert-action{font-size:10px;font-weight:600;padding:3px 8px;border-radius:4px;flex-shrink:0;align-self:center}
+.alert-action.blocked{background:var(--teal-dim);color:var(--teal)}
+.alert-action.investigating{background:var(--amber-dim);color:var(--amber)}
+.alert-action.critical-a{background:var(--red-dim);color:var(--red)}
+.alert-expand-hint{font-size:9px;color:var(--muted);margin-top:3px;opacity:0;transition:opacity .2s}
+.alert-item:hover .alert-expand-hint{opacity:1}
 
-/* Demo left — main area */
-.demo-main { padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+/* ── ALERT DETAIL MODAL ── */
+.modal-overlay{position:fixed;inset:0;background:rgba(6,12,24,.75);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .25s}
+.modal-overlay.open{opacity:1;pointer-events:auto}
+.modal{background:var(--panel);border:1px solid var(--border);border-radius:14px;width:100%;max-width:560px;max-height:85vh;overflow-y:auto;transform:translateY(20px) scale(.97);transition:transform .3s ease-out}
+.modal-overlay.open .modal{transform:translateY(0) scale(1)}
+.modal-top{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.modal-sev-badge{font-size:10px;font-weight:700;padding:4px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.06em;flex-shrink:0}
+.modal-sev-badge.critical{background:var(--red-dim);color:var(--red);border:1px solid var(--red)}
+.modal-sev-badge.high{background:var(--amber-dim);color:var(--amber);border:1px solid var(--amber)}
+.modal-sev-badge.medium{background:var(--blue-dim);color:var(--blue);border:1px solid var(--blue)}
+.modal-sev-badge.low{background:var(--teal-dim);color:var(--teal);border:1px solid var(--teal)}
+.modal-close{width:30px;height:30px;border-radius:7px;background:var(--card);border:1px solid var(--border);color:var(--muted);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;font-size:16px;line-height:1;transition:background .15s,color .15s}
+.modal-close:hover{background:var(--card-hover);color:var(--heading)}
+.modal-title{font-size:17px;font-weight:650;color:var(--heading);line-height:1.3;margin-bottom:4px}
+.modal-subtitle{font-size:12px;color:var(--muted)}
+.modal-body{padding:20px 24px}
+.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+@media(max-width:500px){.modal-grid{grid-template-columns:1fr}}
+.modal-field{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.modal-field-label{font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.modal-field-value{font-size:13px;font-weight:500;color:var(--heading)}
+.modal-field-value.mono{font-family:var(--mono);font-size:12px}
 
-/* Demo stat tiles */
-.demo-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-@media (max-width: 500px) { .demo-stats { grid-template-columns: 1fr; } }
-.demo-stat {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 10px; padding: 14px 16px;
-}
-.demo-stat-label { font-size: 10px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
-.demo-stat-num { font-family: var(--mono); font-size: 26px; font-weight: 700; color: var(--heading); line-height: 1; }
-.demo-stat-num.teal { color: var(--teal); }
-.demo-stat-num.amber { color: var(--amber); }
-.demo-stat-num.red { color: var(--red); }
-.demo-stat-sub { font-size: 11px; color: var(--muted); margin-top: 4px; }
+/* Timeline in modal */
+.modal-timeline{margin-top:4px}
+.modal-timeline-title{font-size:11px;font-weight:600;color:var(--heading);margin-bottom:12px;text-transform:uppercase;letter-spacing:.06em}
+.tl-item{display:flex;gap:12px;padding-bottom:14px;position:relative}
+.tl-item:last-child{padding-bottom:0}
+.tl-line{position:absolute;left:5px;top:14px;bottom:0;width:1px;background:var(--border)}
+.tl-item:last-child .tl-line{display:none}
+.tl-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;margin-top:2px;position:relative;z-index:1}
+.tl-dot.teal{background:var(--teal);box-shadow:0 0 8px var(--teal-dim)}
+.tl-dot.amber{background:var(--amber);box-shadow:0 0 8px var(--amber-dim)}
+.tl-dot.red{background:var(--red);box-shadow:0 0 8px var(--red-dim)}
+.tl-dot.blue{background:var(--blue)}
+.tl-content{flex:1;min-width:0}
+.tl-text{font-size:12px;color:var(--heading);font-weight:500;line-height:1.4}
+.tl-time{font-size:10px;color:var(--muted);font-family:var(--mono);margin-top:1px}
 
-/* Simulation area */
-.sim-area {
-  flex: 1; background: var(--card); border: 1px solid var(--border);
-  border-radius: 10px; padding: 16px; min-height: 260px;
-  display: flex; flex-direction: column; position: relative; overflow: hidden;
-}
-.sim-header {
-  display: flex; align-items: center; justify-content: space-between;
-  margin-bottom: 14px;
-}
-.sim-title { font-size: 13px; font-weight: 600; color: var(--heading); }
-.sim-badge {
-  font-family: var(--mono); font-size: 10px; font-weight: 600;
-  padding: 3px 10px; border-radius: 10px;
-  background: var(--teal-dim); color: var(--teal);
-}
-.sim-badge.scanning { animation: pulse 1.5s ease-in-out infinite; }
+/* Confidence bar */
+.confidence-bar{height:6px;border-radius:3px;background:var(--border);margin-top:6px;overflow:hidden}
+.confidence-fill{height:100%;border-radius:3px;transition:width 1s ease-out}
+.confidence-fill.high{background:var(--red)}.confidence-fill.med{background:var(--amber)}.confidence-fill.low{background:var(--teal)}
+.modal-mitre{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:500;color:var(--teal);background:var(--teal-dim);padding:4px 10px;border-radius:5px;margin-top:8px}
 
-/* Scan visualization */
-.scan-visual {
-  flex: 1; position: relative; display: flex;
-  align-items: center; justify-content: center;
-}
-.scan-ring {
-  width: 180px; height: 180px; border-radius: 50%;
-  border: 2px solid var(--border);
-  position: relative;
-  display: flex; align-items: center; justify-content: center;
-}
-.scan-ring::before {
-  content: ''; position: absolute; inset: -2px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  border-top-color: var(--teal);
-  animation: scanSpin 2s linear infinite;
-}
-@keyframes scanSpin { to { transform: rotate(360deg); } }
-.scan-ring::after {
-  content: ''; position: absolute; inset: 12px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-}
-.scan-center {
-  font-family: var(--mono); font-size: 32px; font-weight: 700;
-  color: var(--teal); z-index: 1;
-}
-.scan-center-label {
-  font-size: 10px; color: var(--muted); text-align: center;
-  font-family: var(--font); font-weight: 500; margin-top: 2px;
-}
-.scan-blip {
-  position: absolute; width: 8px; height: 8px;
-  border-radius: 50%; opacity: 0;
-  animation: blipIn 0.4s ease-out forwards;
-}
-@keyframes blipIn {
-  from { transform: scale(0); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-.scan-blip::after {
-  content: ''; position: absolute; inset: -4px;
-  border-radius: 50%; border: 1px solid;
-  animation: blipRing 1.5s ease-out infinite;
-  opacity: 0.5;
-}
-@keyframes blipRing {
-  from { transform: scale(1); opacity: 0.5; }
-  to { transform: scale(2.5); opacity: 0; }
-}
-.scan-blip.threat { background: var(--red); }
-.scan-blip.threat::after { border-color: var(--red); }
-.scan-blip.blocked { background: var(--teal); }
-.scan-blip.blocked::after { border-color: var(--teal); }
-.scan-blip.warn { background: var(--amber); }
-.scan-blip.warn::after { border-color: var(--amber); }
+/* Bottom bar */
+.demo-bottom{padding:12px 20px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;background:var(--card);font-size:11px;color:var(--muted);flex-wrap:wrap;gap:8px}
+.demo-bottom-left{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.demo-indicator{display:flex;align-items:center;gap:5px}
+.demo-indicator-dot{width:5px;height:5px;border-radius:50%}
+.demo-indicator-dot.green{background:var(--teal)}.demo-indicator-dot.amber{background:var(--amber)}
 
-/* Demo right — alert feed */
-.demo-feed {
-  border-left: 1px solid var(--border);
-  display: flex; flex-direction: column;
-}
-@media (max-width: 768px) { .demo-feed { border-left: none; border-top: 1px solid var(--border); } }
-.demo-feed-header {
-  padding: 14px 18px; border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: space-between;
-}
-.demo-feed-title { font-size: 13px; font-weight: 600; color: var(--heading); }
-.demo-feed-count {
-  font-family: var(--mono); font-size: 11px; font-weight: 600;
-  background: var(--red-dim); color: var(--red);
-  padding: 2px 8px; border-radius: 8px;
-  min-width: 28px; text-align: center;
-}
-.demo-feed-list {
-  flex: 1; overflow-y: auto; padding: 8px 0;
-}
-.alert-item {
-  display: flex; gap: 10px; padding: 10px 18px;
-  border-bottom: 1px solid var(--border);
-  animation: alertSlideIn 0.5s ease-out;
-  transition: background 0.15s;
-}
-.alert-item:hover { background: var(--card); }
-@keyframes alertSlideIn {
-  from { transform: translateX(30px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-.alert-sev {
-  width: 3px; border-radius: 2px; flex-shrink: 0;
-  min-height: 36px;
-}
-.alert-sev.critical { background: var(--red); }
-.alert-sev.high { background: var(--amber); }
-.alert-sev.medium { background: var(--blue); }
-.alert-sev.low { background: var(--teal); }
-.alert-body { flex: 1; min-width: 0; }
-.alert-title-text {
-  font-size: 12px; font-weight: 550; color: var(--heading);
-  line-height: 1.3;
-}
-.alert-meta { font-size: 10px; color: var(--muted); margin-top: 2px; display: flex; gap: 8px; }
-.alert-action {
-  font-size: 10px; font-weight: 600; padding: 3px 8px;
-  border-radius: 4px; flex-shrink: 0; align-self: center;
-}
-.alert-action.blocked { background: var(--teal-dim); color: var(--teal); }
-.alert-action.investigating { background: var(--amber-dim); color: var(--amber); }
-.alert-action.critical-a { background: var(--red-dim); color: var(--red); }
+.start-demo-btn{display:flex;align-items:center;gap:8px;font-family:var(--font);font-size:14px;font-weight:600;color:var(--midnight);background:var(--teal);padding:12px 28px;border-radius:8px;border:none;cursor:pointer;margin:28px auto 0;transition:transform .2s,box-shadow .2s;box-shadow:0 0 30px rgba(0,228,184,.15)}
+.start-demo-btn:hover{transform:translateY(-1px);box-shadow:0 0 50px rgba(0,228,184,.25)}
+.start-demo-btn:disabled{opacity:.5;cursor:default;transform:none;box-shadow:none}
 
-/* Demo bottom bar */
-.demo-bottom {
-  padding: 12px 20px; border-top: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: space-between;
-  background: var(--card);
-  font-size: 11px; color: var(--muted);
-}
-.demo-bottom-left { display: flex; align-items: center; gap: 16px; }
-.demo-indicator { display: flex; align-items: center; gap: 5px; }
-.demo-indicator-dot { width: 5px; height: 5px; border-radius: 50%; }
-.demo-indicator-dot.green { background: var(--teal); }
-.demo-indicator-dot.amber { background: var(--amber); }
-
-/* Start demo button */
-.start-demo-btn {
-  display: flex; align-items: center; gap: 8px;
-  font-family: var(--font); font-size: 14px; font-weight: 600;
-  color: var(--midnight); background: var(--teal);
-  padding: 12px 28px; border-radius: 8px;
-  border: none; cursor: pointer; margin: 28px auto 0;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 0 30px rgba(0,228,184,0.15);
-}
-.start-demo-btn:hover { transform: translateY(-1px); box-shadow: 0 0 50px rgba(0,228,184,0.25); }
-.start-demo-btn:disabled { opacity: 0.5; cursor: default; transform: none; box-shadow: none; }
-
-/* ── PITCH SECTION ── */
-#pitch { border-top: 1px solid var(--border); }
-.pitch-header { text-align: center; margin-bottom: 56px; }
-.pitch-header h2 {
-  font-size: clamp(24px, 4vw, 34px); font-weight: 700;
-  color: var(--heading); margin-bottom: 10px; text-wrap: balance;
-}
-.pitch-header p { color: var(--body); max-width: 540px; margin: 0 auto; }
-
-/* Pitch cards */
-.pitch-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 16px; margin-bottom: 56px;
-}
-@media (max-width: 768px) { .pitch-grid { grid-template-columns: 1fr; } }
-.pitch-card {
-  background: var(--panel); border: 1px solid var(--border);
-  border-radius: 12px; padding: 24px;
-}
-.pitch-card-icon {
-  width: 40px; height: 40px; border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: 16px;
-}
-.pitch-card-icon.teal { background: var(--teal-dim); color: var(--teal); }
-.pitch-card-icon.amber { background: var(--amber-dim); color: var(--amber); }
-.pitch-card-icon.red { background: var(--red-dim); color: var(--red); }
-.pitch-card-icon.blue { background: var(--blue-dim); color: var(--blue); }
-.pitch-card h3 { font-size: 16px; font-weight: 650; color: var(--heading); margin-bottom: 8px; }
-.pitch-card p { font-size: 13.5px; line-height: 1.55; }
-
-/* The ask */
-.pitch-ask {
-  background: var(--panel); border: 1px solid var(--border);
-  border-radius: 14px; padding: 40px;
-  text-align: center; position: relative; overflow: hidden;
-}
-.pitch-ask::before {
-  content: ''; position: absolute; inset: 0;
-  background: radial-gradient(ellipse at center, var(--teal-glow), transparent 70%);
-}
-.pitch-ask-content { position: relative; }
-.pitch-ask h3 { font-size: 22px; font-weight: 700; color: var(--heading); margin-bottom: 8px; }
-.pitch-ask-desc { color: var(--body); max-width: 480px; margin: 0 auto 24px; font-size: 14px; }
-.pitch-numbers {
-  display: flex; justify-content: center; gap: 48px;
-  margin-bottom: 28px; flex-wrap: wrap;
-}
-.pitch-num { text-align: center; }
-.pitch-num-val { font-family: var(--mono); font-size: 30px; font-weight: 700; color: var(--teal); display: block; }
-.pitch-num-label { font-size: 12px; color: var(--muted); }
-.pitch-ask-cta {
-  font-family: var(--font); font-size: 15px; font-weight: 600;
-  color: var(--midnight); background: var(--teal);
-  padding: 13px 32px; border-radius: 9px;
-  border: none; cursor: pointer; transition: opacity 0.2s;
-  text-decoration: none; display: inline-block;
-}
-.pitch-ask-cta:hover { opacity: 0.88; }
-
-/* Market stats */
-.market-row {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 12px; margin-bottom: 56px;
-}
-@media (max-width: 600px) { .market-row { grid-template-columns: repeat(2, 1fr); } }
-.market-stat {
-  background: var(--panel); border: 1px solid var(--border);
-  border-radius: 10px; padding: 20px; text-align: center;
-}
-.market-stat-val { font-family: var(--mono); font-size: 24px; font-weight: 700; color: var(--heading); }
-.market-stat-label { font-size: 12px; color: var(--muted); margin-top: 4px; }
-
-/* Footer */
-.footer {
-  border-top: 1px solid var(--border);
-  padding: 28px 0;
-  text-align: center;
-  font-size: 12px;
-  color: var(--muted);
-}
-.footer a { color: var(--teal); text-decoration: none; }
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
-}
+/* ── PITCH ── */
+#pitch{border-top:1px solid var(--border)}
+.pitch-header{text-align:center;margin-bottom:56px}
+.pitch-header h2{font-size:clamp(24px,4vw,34px);font-weight:700;color:var(--heading);margin-bottom:10px;text-wrap:balance}
+.pitch-header p{color:var(--body);max-width:540px;margin:0 auto}
+.market-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:56px}
+@media(max-width:600px){.market-row{grid-template-columns:repeat(2,1fr)}}
+.market-stat{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center}
+.market-stat-val{font-family:var(--mono);font-size:24px;font-weight:700;color:var(--heading)}
+.market-stat-label{font-size:12px;color:var(--muted);margin-top:4px}
+.pitch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:56px}
+@media(max-width:768px){.pitch-grid{grid-template-columns:1fr}}
+.pitch-card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:24px}
+.pitch-card-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.pitch-card-icon.teal{background:var(--teal-dim);color:var(--teal)}
+.pitch-card-icon.amber{background:var(--amber-dim);color:var(--amber)}
+.pitch-card-icon.red{background:var(--red-dim);color:var(--red)}
+.pitch-card-icon.blue{background:var(--blue-dim);color:var(--blue)}
+.pitch-card h3{font-size:16px;font-weight:650;color:var(--heading);margin-bottom:8px}
+.pitch-card p{font-size:13.5px;line-height:1.55}
+.pitch-ask{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:40px;text-align:center;position:relative;overflow:hidden}
+.pitch-ask::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,var(--teal-glow),transparent 70%)}
+.pitch-ask-content{position:relative}
+.pitch-ask h3{font-size:22px;font-weight:700;color:var(--heading);margin-bottom:8px}
+.pitch-ask-desc{color:var(--body);max-width:480px;margin:0 auto 24px;font-size:14px}
+.pitch-numbers{display:flex;justify-content:center;gap:48px;margin-bottom:28px;flex-wrap:wrap}
+.pitch-num{text-align:center}
+.pitch-num-val{font-family:var(--mono);font-size:30px;font-weight:700;color:var(--teal);display:block}
+.pitch-num-label{font-size:12px;color:var(--muted)}
+.pitch-ask-cta{font-family:var(--font);font-size:15px;font-weight:600;color:var(--midnight);background:var(--teal);padding:13px 32px;border-radius:9px;border:none;cursor:pointer;transition:opacity .2s;text-decoration:none;display:inline-block}
+.pitch-ask-cta:hover{opacity:.88}
+.footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;font-size:12px;color:var(--muted)}
+.footer a{color:var(--teal);text-decoration:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}}
 </style>
 
-<!-- ═══════════ NAV ═══════════ -->
+<!-- ══ NAV ══ -->
 <nav class="topnav">
   <a class="nav-logo" href="#">
-    <svg width="26" height="26" viewBox="0 0 30 30" fill="none">
-      <path d="M15 2L4 7.5V14C4 21.2 8.7 27.5 15 29C21.3 27.5 26 21.2 26 14V7.5L15 2Z" fill="var(--teal-dim)" stroke="var(--teal)" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M12 14.5L14.5 17L19 12" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <span>
-      <span class="nav-logo-text">Sentinel UK</span>
-      <span class="nav-logo-sub">AI Cyber Defence</span>
-    </span>
+    <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><path d="M15 2L4 7.5V14C4 21.2 8.7 27.5 15 29C21.3 27.5 26 21.2 26 14V7.5L15 2Z" fill="var(--teal-dim)" stroke="var(--teal)" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 14.5L14.5 17L19 12" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span><span class="nav-logo-text">Sentinel UK</span><span class="nav-logo-sub">AI Cyber Defence</span></span>
   </a>
   <div class="nav-links">
     <a href="#demo" class="nav-link">Demo</a>
     <a href="#pitch" class="nav-link">The Pitch</a>
-    <a href="#pitch-ask" class="nav-cta">Get in Touch</a>
+    <a href="mailto:tonymomoh@icloud.com?subject=Sentinel%20UK%20%E2%80%94%20Let%27s%20Talk&body=Hi%20Tony%2C%0A%0AI%20saw%20the%20Sentinel%20UK%20demo%20and%20I%E2%80%99d%20like%20to%20discuss%20further.%0A%0A" class="nav-cta">Get in Touch</a>
   </div>
 </nav>
 
-<!-- ═══════════ HERO ═══════════ -->
+<!-- ══ HERO ══ -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
+  <canvas id="particleCanvas"></canvas>
   <div class="hero-content">
     <div class="hero-shield">
-      <svg viewBox="0 0 72 72" fill="none" width="72" height="72">
-        <path d="M36 6L10 18V33C10 50.4 21 63.6 36 67C51 63.6 62 50.4 62 33V18L36 6Z"
-              fill="var(--teal-glow)" stroke="var(--teal)" stroke-width="2" stroke-linejoin="round"/>
-        <path d="M28 34L33.5 39.5L45 28" stroke="var(--teal)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="36" cy="16" r="2.5" fill="var(--teal)" opacity="0.5"/>
-        <circle cx="22" cy="28" r="1.5" fill="var(--teal)" opacity="0.3"/>
-        <circle cx="50" cy="28" r="1.5" fill="var(--teal)" opacity="0.3"/>
-        <line x1="36" y1="19" x2="36" y2="24" stroke="var(--teal)" stroke-width="1" opacity="0.2"/>
+      <svg viewBox="0 0 80 80" fill="none" width="80" height="80">
+        <path d="M40 6L10 20V36C10 56 23 70 40 74C57 70 70 56 70 36V20L40 6Z" fill="var(--teal-glow)" stroke="var(--teal)" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M30 38L37 45L52 30" stroke="var(--teal)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="40" cy="17" r="2.5" fill="var(--teal)" opacity=".5"/>
+        <circle cx="23" cy="30" r="1.5" fill="var(--teal)" opacity=".3"/>
+        <circle cx="57" cy="30" r="1.5" fill="var(--teal)" opacity=".3"/>
+        <line x1="40" y1="20" x2="40" y2="25" stroke="var(--teal)" stroke-width="1" opacity=".2"/>
       </svg>
     </div>
     <h1>AI-powered cyber defence <span class="accent">built for Britain</span></h1>
@@ -550,109 +314,60 @@ body {
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
     </a>
     <div class="hero-stats">
-      <div>
-        <span class="hero-stat-val">71%</span>
-        <span class="hero-stat-label">of UK firms hit by AI threats</span>
-      </div>
-      <div>
-        <span class="hero-stat-val">95%</span>
-        <span class="hero-stat-label">lack confidence to defend</span>
-      </div>
-      <div>
-        <span class="hero-stat-val">3rd</span>
-        <span class="hero-stat-label">most attacked country</span>
-      </div>
+      <div><span class="hero-stat-val">71%</span><span class="hero-stat-label">of UK firms hit by AI threats</span></div>
+      <div><span class="hero-stat-val">95%</span><span class="hero-stat-label">lack confidence to defend</span></div>
+      <div><span class="hero-stat-val">3rd</span><span class="hero-stat-label">most attacked country</span></div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════ DEMO ═══════════ -->
+<!-- ══ DEMO ══ -->
 <section id="demo" class="section">
   <div class="container">
     <div class="demo-header">
       <h2>Live threat detection</h2>
-      <p>Watch Sentinel UK identify, classify, and neutralise AI-powered attacks in real time.</p>
+      <p>Watch Sentinel UK identify, classify, and neutralise AI-powered attacks in real time. Click any alert for the full analysis.</p>
     </div>
-
     <div class="demo-shell">
       <div class="demo-toolbar">
         <div class="demo-toolbar-left">
           <div class="demo-dots"><span class="demo-dot r"></span><span class="demo-dot y"></span><span class="demo-dot g"></span></div>
           <span class="demo-toolbar-title">sentinel-uk.gov — Threat Monitor</span>
         </div>
-        <div class="demo-status">
-          <span class="demo-status-dot"></span>
-          <span>AI Shield Active</span>
-        </div>
+        <div class="demo-status"><span class="demo-status-dot"></span><span>AI Shield Active</span></div>
       </div>
-
       <div class="demo-content">
         <div class="demo-main">
           <div class="demo-stats">
-            <div class="demo-stat">
-              <div class="demo-stat-label">Threats blocked</div>
-              <div class="demo-stat-num teal" id="blockedCount">0</div>
-              <div class="demo-stat-sub">Today</div>
-            </div>
-            <div class="demo-stat">
-              <div class="demo-stat-label">Under investigation</div>
-              <div class="demo-stat-num amber" id="investCount">0</div>
-              <div class="demo-stat-sub">Active</div>
-            </div>
-            <div class="demo-stat">
-              <div class="demo-stat-label">Critical alerts</div>
-              <div class="demo-stat-num red" id="critCount">0</div>
-              <div class="demo-stat-sub">Needs attention</div>
-            </div>
+            <div class="demo-stat"><div class="demo-stat-label">Threats blocked</div><div class="demo-stat-num teal" id="blockedCount">0</div><div class="demo-stat-sub">Today</div></div>
+            <div class="demo-stat"><div class="demo-stat-label">Under investigation</div><div class="demo-stat-num amber" id="investCount">0</div><div class="demo-stat-sub">Active</div></div>
+            <div class="demo-stat"><div class="demo-stat-label">Critical alerts</div><div class="demo-stat-num red" id="critCount">0</div><div class="demo-stat-sub">Needs attention</div></div>
           </div>
           <div class="sim-area">
-            <div class="sim-header">
-              <span class="sim-title">Network Scan</span>
-              <span class="sim-badge" id="simBadge">Ready</span>
-            </div>
+            <div class="sim-header"><span class="sim-title">Network Scan</span><span class="sim-badge" id="simBadge">Ready</span></div>
             <div class="scan-visual">
               <div class="scan-ring" id="scanRing">
-                <div style="text-align:center">
-                  <div class="scan-center" id="scanPercent">—</div>
-                  <div class="scan-center-label" id="scanLabel">Press start</div>
-                </div>
+                <div style="text-align:center"><div class="scan-center" id="scanPercent">—</div><div class="scan-center-label" id="scanLabel">Press start</div></div>
               </div>
             </div>
           </div>
         </div>
-
         <div class="demo-feed">
-          <div class="demo-feed-header">
-            <span class="demo-feed-title">Alert Feed</span>
-            <span class="demo-feed-count" id="alertCount">0</span>
-          </div>
+          <div class="demo-feed-header"><span class="demo-feed-title">Alert Feed</span><span class="demo-feed-count" id="alertCount">0</span></div>
           <div class="demo-feed-list" id="alertFeed">
-            <div style="padding:40px 18px; text-align:center; color:var(--muted); font-size:12px;">
-              Waiting for scan to begin…
-            </div>
+            <div style="padding:40px 18px;text-align:center;color:var(--muted);font-size:12px">Waiting for scan to begin…</div>
           </div>
         </div>
       </div>
-
       <div class="demo-bottom">
         <div class="demo-bottom-left">
-          <div class="demo-indicator">
-            <span class="demo-indicator-dot green"></span>
-            <span>1,247 endpoints</span>
-          </div>
-          <div class="demo-indicator">
-            <span class="demo-indicator-dot green"></span>
-            <span>AI models loaded</span>
-          </div>
-          <div class="demo-indicator">
-            <span class="demo-indicator-dot amber"></span>
-            <span id="demoTime">—</span>
-          </div>
+          <div class="demo-indicator"><span class="demo-indicator-dot green"></span><span>1,247 endpoints</span></div>
+          <div class="demo-indicator"><span class="demo-indicator-dot green"></span><span>AI models loaded</span></div>
+          <div class="demo-indicator"><span class="demo-indicator-dot amber"></span><span id="demoTime">—</span></div>
         </div>
         <span style="font-family:var(--mono);font-size:10px;color:var(--muted)">v2.4.1-uk</span>
       </div>
     </div>
-
     <button class="start-demo-btn" id="startBtn" onclick="runDemo()">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
       Run threat simulation
@@ -660,179 +375,305 @@ body {
   </div>
 </section>
 
-<!-- ═══════════ PITCH ═══════════ -->
+<!-- ══ ALERT DETAIL MODAL ══ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalContent" role="dialog" aria-modal="true"></div>
+</div>
+
+<!-- ══ PITCH ══ -->
 <section id="pitch" class="section">
   <div class="container">
     <div class="pitch-header">
       <h2>The opportunity</h2>
       <p>Britain needs its own AI cyber defence. No one is building it for the businesses that need it most.</p>
     </div>
-
     <div class="market-row">
-      <div class="market-stat">
-        <div class="market-stat-val">£100M</div>
-        <div class="market-stat-label">UK govt cyber budget</div>
-      </div>
-      <div class="market-stat">
-        <div class="market-stat-val">5.5M</div>
-        <div class="market-stat-label">UK SMEs unprotected</div>
-      </div>
-      <div class="market-stat">
-        <div class="market-stat-val">48%</div>
-        <div class="market-stat-label">Feel unprepared</div>
-      </div>
-      <div class="market-stat">
-        <div class="market-stat-val">0</div>
-        <div class="market-stat-label">UK-built alternatives</div>
-      </div>
+      <div class="market-stat"><div class="market-stat-val">£100M</div><div class="market-stat-label">UK govt cyber budget</div></div>
+      <div class="market-stat"><div class="market-stat-val">5.5M</div><div class="market-stat-label">UK SMEs unprotected</div></div>
+      <div class="market-stat"><div class="market-stat-val">48%</div><div class="market-stat-label">Feel unprepared</div></div>
+      <div class="market-stat"><div class="market-stat-val">0</div><div class="market-stat-label">UK-built alternatives</div></div>
     </div>
-
     <div class="pitch-grid">
-      <div class="pitch-card">
-        <div class="pitch-card-icon teal">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>AI Threat Shield</h3>
-        <p>Real-time detection of AI-generated attacks — phishing, deepfakes, autonomous intrusions — using lightweight agents on every endpoint.</p>
-      </div>
-      <div class="pitch-card">
-        <div class="pitch-card-icon amber">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        </div>
-        <h3>Compliance Copilot</h3>
-        <p>Automated Cyber Essentials, UK GDPR, NIS2, and NCSC CAF compliance. Audit-ready reports generated in plain English, no consultant needed.</p>
-      </div>
-      <div class="pitch-card">
-        <div class="pitch-card-icon red">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        </div>
-        <h3>Incident Autopilot</h3>
-        <p>When an attack lands, Sentinel isolates systems, alerts responders, begins remediation, and generates an ICO-ready incident report automatically.</p>
-      </div>
+      <div class="pitch-card"><div class="pitch-card-icon teal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>AI Threat Shield</h3><p>Real-time detection of AI-generated attacks — phishing, deepfakes, autonomous intrusions — using lightweight agents on every endpoint.</p></div>
+      <div class="pitch-card"><div class="pitch-card-icon amber"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Compliance Copilot</h3><p>Automated Cyber Essentials, UK GDPR, NIS2, and NCSC CAF compliance. Audit-ready reports generated in plain English.</p></div>
+      <div class="pitch-card"><div class="pitch-card-icon red"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Incident Autopilot</h3><p>When an attack lands, Sentinel isolates systems, alerts responders, begins remediation, and generates an ICO-ready incident report.</p></div>
     </div>
-
-    <div class="pitch-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 56px;">
-      <div class="pitch-card">
-        <div class="pitch-card-icon blue">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </div>
-        <h3>Deepfake Defence</h3>
-        <p>AI-powered verification of emails, voice calls, and video. Flags synthetic content before it reaches your team — the threat the minister warned about.</p>
-      </div>
-      <div class="pitch-card">
-        <div class="pitch-card-icon teal">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        </div>
-        <h3>UK Data Sovereignty</h3>
-        <p>All data stays on UK soil. Hosted in AWS London or Azure UK South. No foreign jurisdiction risk. Built for government procurement from day one.</p>
-      </div>
+    <div class="pitch-grid" style="grid-template-columns:1fr 1fr;margin-bottom:56px">
+      <div class="pitch-card"><div class="pitch-card-icon blue"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><h3>Deepfake Defence</h3><p>AI-powered verification of emails, voice calls, and video. Flags synthetic content before it reaches your team.</p></div>
+      <div class="pitch-card"><div class="pitch-card-icon teal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h3>UK Data Sovereignty</h3><p>All data stays on UK soil. AWS London or Azure UK South. No foreign jurisdiction risk. Built for government procurement from day one.</p></div>
     </div>
-
     <div class="pitch-ask" id="pitch-ask">
       <div class="pitch-ask-content">
         <h3>Building Britain's cyber shield</h3>
         <p class="pitch-ask-desc">The NCSC says an AI attack on the UK is inevitable. We're building the defence — and we're looking for partners to make it happen.</p>
         <div class="pitch-numbers">
-          <div class="pitch-num">
-            <span class="pitch-num-val">£250k</span>
-            <span class="pitch-num-label">MVP build cost</span>
-          </div>
-          <div class="pitch-num">
-            <span class="pitch-num-val">4 mo</span>
-            <span class="pitch-num-label">To working demo</span>
-          </div>
-          <div class="pitch-num">
-            <span class="pitch-num-val">£300k</span>
-            <span class="pitch-num-label">Innovate UK target</span>
-          </div>
-          <div class="pitch-num">
-            <span class="pitch-num-val">£5M+</span>
-            <span class="pitch-num-label">Year 3 revenue</span>
-          </div>
+          <div class="pitch-num"><span class="pitch-num-val">£250k</span><span class="pitch-num-label">MVP build cost</span></div>
+          <div class="pitch-num"><span class="pitch-num-val">4 mo</span><span class="pitch-num-label">To working demo</span></div>
+          <div class="pitch-num"><span class="pitch-num-val">£300k</span><span class="pitch-num-label">Innovate UK target</span></div>
+          <div class="pitch-num"><span class="pitch-num-val">£5M+</span><span class="pitch-num-label">Year 3 revenue</span></div>
         </div>
-        <button class="pitch-ask-cta" onclick="this.textContent='We'll be in touch →'">Request a conversation</button>
+        <a class="pitch-ask-cta" href="mailto:tonymomoh@icloud.com?subject=Sentinel%20UK%20%E2%80%94%20Let%27s%20Talk&body=Hi%20Tony%2C%0A%0AI%20saw%20the%20Sentinel%20UK%20demo%20and%20I%E2%80%99d%20like%20to%20discuss%20further.%0A%0A">Request a conversation →</a>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    Sentinel UK · AI Cyber Defence Platform · <a href="#">sentineluk.co.uk</a> · London, United Kingdom
-  </div>
-</footer>
+<footer class="footer"><div class="container">Sentinel UK · AI Cyber Defence Platform · London, United Kingdom · <a href="mailto:tonymomoh@icloud.com">tonymomoh@icloud.com</a></div></footer>
 
 <script>
-// Clock
-function updateDemoTime() {
-  const now = new Date();
-  const el = document.getElementById('demoTime');
-  if (el) el.textContent = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, timeZone: 'Europe/London' }) + ' BST';
-}
-updateDemoTime();
-setInterval(updateDemoTime, 1000);
+/* ── Particles ── */
+(function(){
+  const c = document.getElementById('particleCanvas');
+  if (!c) return;
+  const ctx = c.getContext('2d');
+  let w, h, particles = [];
+  const mq = matchMedia('(prefers-reduced-motion: reduce)');
+  if (mq.matches) return;
+  function resize(){ w = c.width = c.offsetWidth; h = c.height = c.offsetHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+  for (let i = 0; i < 40; i++){
+    particles.push({ x: Math.random()*w, y: Math.random()*h, vx: (Math.random()-.5)*.3, vy: (Math.random()-.5)*.3, r: Math.random()*1.5+.5 });
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    particles.forEach(p => {
+      p.x += p.vx; p.y += p.vy;
+      if(p.x<0)p.x=w; if(p.x>w)p.x=0; if(p.y<0)p.y=h; if(p.y>h)p.y=0;
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle = 'rgba(0,228,184,0.15)'; ctx.fill();
+    });
+    // Connect nearby
+    for(let i=0;i<particles.length;i++){
+      for(let j=i+1;j<particles.length;j++){
+        const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y;
+        const d=Math.sqrt(dx*dx+dy*dy);
+        if(d<120){
+          ctx.beginPath(); ctx.moveTo(particles[i].x,particles[i].y); ctx.lineTo(particles[j].x,particles[j].y);
+          ctx.strokeStyle=`rgba(0,228,184,${.06*(1-d/120)})`; ctx.lineWidth=.5; ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
 
-// Demo simulation
+/* ── Clock ── */
+function updateDemoTime(){
+  const el=document.getElementById('demoTime');
+  if(el) el.textContent=new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'Europe/London'})+' BST';
+}
+updateDemoTime(); setInterval(updateDemoTime,1000);
+
+/* ── Threat data ── */
 const threats = [
-  { sev: 'critical', title: 'AI-generated spear phishing detected', meta: 'finance@corp.co.uk · GPT-generated', action: 'blocked', actionLabel: 'Blocked' },
-  { sev: 'critical', title: 'Deepfake voice call intercepted', meta: 'CEO impersonation · synthetic voice', action: 'blocked', actionLabel: 'Blocked' },
-  { sev: 'high', title: 'Anomalous data exfiltration attempt', meta: 'Endpoint W-0847 · 2.3GB outbound', action: 'investigating', actionLabel: 'Investigating' },
-  { sev: 'medium', title: 'Brute force on RDP gateway', meta: '3,412 attempts · IP 185.220.x.x', action: 'blocked', actionLabel: 'Auto-blocked' },
-  { sev: 'critical', title: 'Ransomware payload detected', meta: 'Email attachment · AI-polymorphic', action: 'blocked', actionLabel: 'Quarantined' },
-  { sev: 'high', title: 'Supply chain vulnerability exploited', meta: 'npm:lodash CVE-2026-4821', action: 'critical-a', actionLabel: 'Patching' },
-  { sev: 'high', title: 'Deepfake video in Teams call', meta: 'Board meeting · synthetic participant', action: 'blocked', actionLabel: 'Blocked' },
-  { sev: 'medium', title: 'Credential stuffing attack', meta: 'portal.corp.co.uk · 892 attempts', action: 'blocked', actionLabel: 'Blocked' },
-  { sev: 'low', title: 'Unusual login from new location', meta: 'j.patel@corp.co.uk · Lagos, NG', action: 'investigating', actionLabel: 'Flagged' },
-  { sev: 'critical', title: 'Zero-day exploit attempt', meta: 'Endpoint S-0023 · kernel-level', action: 'blocked', actionLabel: 'Blocked' },
-  { sev: 'high', title: 'AI-crafted invoice fraud email', meta: 'accounts@corp.co.uk · £48,200', action: 'blocked', actionLabel: 'Blocked' },
-  { sev: 'medium', title: 'TLS certificate expiring', meta: 'staging.corp.co.uk · 3 days left', action: 'investigating', actionLabel: 'Alert sent' },
+  { sev:'critical', title:'AI-generated spear phishing detected', meta:'finance@corp.co.uk · GPT-generated', action:'blocked', actionLabel:'Blocked',
+    detail:{ type:'AI Phishing', source:'External · 91.215.x.x (RU)', target:'finance@corp.co.uk', confidence:97, mitre:'T1566.001 — Spearphishing Attachment',
+      summary:'An AI-generated email impersonating the CFO was intercepted. Language analysis detected synthetic writing patterns with 97% confidence. The email contained a weaponised PDF attachment designed to deploy a reverse shell.',
+      timeline:[
+        {dot:'red',text:'Inbound email received from spoofed address',time:'16:42:01'},
+        {dot:'amber',text:'AI language model detected synthetic writing patterns',time:'16:42:01'},
+        {dot:'blue',text:'Attachment sandboxed — reverse shell payload identified',time:'16:42:02'},
+        {dot:'teal',text:'Email quarantined · sender domain blocked · SOC notified',time:'16:42:03'}
+      ]}},
+  { sev:'critical', title:'Deepfake voice call intercepted', meta:'CEO impersonation · synthetic voice', action:'blocked', actionLabel:'Blocked',
+    detail:{ type:'Deepfake Voice', source:'VoIP · +44 20 7946 xxxx', target:'Head of Finance (direct line)', confidence:94, mitre:'T1598.004 — Phishing for Information via Voice',
+      summary:'A synthetic voice clone of the CEO attempted to authorise an urgent wire transfer of £185,000. Sentinel\'s voice biometric analysis detected spectral anomalies consistent with AI voice synthesis. Call was terminated and flagged.',
+      timeline:[
+        {dot:'red',text:'Inbound call matched CEO voice profile — flagged for analysis',time:'16:28:14'},
+        {dot:'amber',text:'Real-time spectral analysis detected synthesis artefacts',time:'16:28:18'},
+        {dot:'blue',text:'Voice biometric confidence: 94% synthetic',time:'16:28:19'},
+        {dot:'teal',text:'Call terminated · finance team alerted · incident logged',time:'16:28:22'}
+      ]}},
+  { sev:'high', title:'Anomalous data exfiltration attempt', meta:'Endpoint W-0847 · 2.3GB outbound', action:'investigating', actionLabel:'Investigating',
+    detail:{ type:'Data Exfiltration', source:'Internal · Endpoint W-0847 (192.168.4.23)', target:'45.33.x.x (Unregistered VPS)', confidence:88, mitre:'T1041 — Exfiltration Over C2 Channel',
+      summary:'Endpoint W-0847 initiated an encrypted data transfer of 2.3GB to an unregistered VPS. Traffic pattern analysis shows data chunking consistent with automated exfiltration tools. The endpoint has been network-isolated pending investigation.',
+      timeline:[
+        {dot:'amber',text:'Unusual outbound traffic spike detected on W-0847',time:'16:14:33'},
+        {dot:'red',text:'2.3GB encrypted transfer to unknown VPS identified',time:'16:14:45'},
+        {dot:'blue',text:'Traffic pattern matches known exfiltration tool signatures',time:'16:15:01'},
+        {dot:'amber',text:'Endpoint isolated from network · investigation in progress',time:'16:15:08'}
+      ]}},
+  { sev:'medium', title:'Brute force on RDP gateway', meta:'3,412 attempts · IP 185.220.x.x', action:'blocked', actionLabel:'Auto-blocked',
+    detail:{ type:'Brute Force', source:'External · 185.220.x.x (TOR exit node)', target:'rdp.corp.co.uk:3389', confidence:99, mitre:'T1110.001 — Password Guessing',
+      summary:'A distributed brute force attack targeting the RDP gateway was detected and automatically blocked. 3,412 authentication attempts from a Tor exit node over 4 minutes. Rate limiting and geo-blocking engaged.',
+      timeline:[
+        {dot:'amber',text:'Authentication rate anomaly detected on RDP gateway',time:'16:01:12'},
+        {dot:'red',text:'3,412 failed attempts in 4 minutes — brute force confirmed',time:'16:05:18'},
+        {dot:'teal',text:'Source IP blocked · Tor exit node range added to blocklist',time:'16:05:19'},
+        {dot:'teal',text:'RDP gateway rate limiting increased to hardened mode',time:'16:05:20'}
+      ]}},
+  { sev:'critical', title:'Ransomware payload detected in email', meta:'AI-polymorphic · encrypted attachment', action:'blocked', actionLabel:'Quarantined',
+    detail:{ type:'Ransomware', source:'External · compromised supply chain sender', target:'operations@corp.co.uk', confidence:99, mitre:'T1486 — Data Encrypted for Impact',
+      summary:'An AI-polymorphic ransomware payload was detected inside an encrypted ZIP attachment. The payload mutates its signature on each execution, evading traditional antivirus. Sentinel\'s behavioural analysis in sandbox caught the encryption routine.',
+      timeline:[
+        {dot:'amber',text:'Encrypted attachment flagged for deep analysis',time:'15:47:04'},
+        {dot:'red',text:'Sandbox execution revealed file encryption behaviour',time:'15:47:11'},
+        {dot:'red',text:'AI-polymorphic signature mutation confirmed',time:'15:47:14'},
+        {dot:'teal',text:'Attachment quarantined · all endpoints scanned · sender blocked',time:'15:47:16'}
+      ]}},
+  { sev:'high', title:'Supply chain dependency vulnerability', meta:'npm:lodash CVE-2026-4821', action:'critical-a', actionLabel:'Patching',
+    detail:{ type:'Supply Chain', source:'npm registry · lodash@4.17.21', target:'12 internal applications', confidence:92, mitre:'T1195.002 — Compromise Software Supply Chain',
+      summary:'A critical vulnerability in lodash (CVE-2026-4821) enables remote code execution via prototype pollution. 12 internal applications depend on the affected version. Automated patching has been initiated.',
+      timeline:[
+        {dot:'red',text:'CVE-2026-4821 published — critical severity (CVSS 9.8)',time:'14:22:00'},
+        {dot:'amber',text:'Dependency scan: 12 applications running vulnerable version',time:'14:22:03'},
+        {dot:'blue',text:'Automated patch deployment initiated across CI/CD pipeline',time:'14:25:00'},
+        {dot:'amber',text:'8 of 12 applications patched · 4 pending staging validation',time:'15:30:00'}
+      ]}},
+  { sev:'high', title:'Deepfake video in Teams call', meta:'Board meeting · synthetic participant', action:'blocked', actionLabel:'Blocked',
+    detail:{ type:'Deepfake Video', source:'External · spoofed Teams invite', target:'Monthly board meeting', confidence:91, mitre:'T1534 — Internal Spearphishing',
+      summary:'A synthetic video participant joined the monthly board meeting via a spoofed Teams invite. Sentinel\'s real-time facial analysis detected inconsistencies in lip-sync, lighting, and micro-expressions. The participant was removed and the meeting secured.',
+      timeline:[
+        {dot:'amber',text:'Unrecognised participant joined board meeting via external link',time:'14:02:33'},
+        {dot:'red',text:'Facial analysis flagged lip-sync and micro-expression anomalies',time:'14:02:41'},
+        {dot:'blue',text:'Deepfake confidence: 91% synthetic — participant frozen',time:'14:02:44'},
+        {dot:'teal',text:'Participant removed · meeting link rotated · attendees notified',time:'14:02:48'}
+      ]}},
+  { sev:'medium', title:'Credential stuffing on staff portal', meta:'portal.corp.co.uk · 892 attempts', action:'blocked', actionLabel:'Blocked',
+    detail:{ type:'Credential Stuffing', source:'Botnet · distributed IPs (14 countries)', target:'portal.corp.co.uk', confidence:96, mitre:'T1110.004 — Credential Stuffing',
+      summary:'A distributed credential stuffing attack was detected across 892 login attempts using leaked credentials from a third-party breach. Sentinel cross-referenced with known breach databases and blocked all attempts.',
+      timeline:[
+        {dot:'amber',text:'Login failure rate exceeded threshold on staff portal',time:'13:41:08'},
+        {dot:'red',text:'892 attempts from 14 countries using breached credential pairs',time:'13:44:22'},
+        {dot:'teal',text:'All source IPs blocked · affected accounts locked for reset',time:'13:44:24'},
+        {dot:'teal',text:'Breach notification sent to 23 staff with compromised emails',time:'13:45:00'}
+      ]}},
+  { sev:'low', title:'Unusual login from new location', meta:'j.patel@corp.co.uk · Lagos, NG', action:'investigating', actionLabel:'Flagged',
+    detail:{ type:'Anomalous Access', source:'IP 105.112.x.x · Lagos, Nigeria', target:'j.patel@corp.co.uk', confidence:62, mitre:'T1078 — Valid Accounts',
+      summary:'User j.patel logged in from Lagos, Nigeria. This location has not been associated with this account before. The user\'s previous session was 3 hours ago from London. The login used valid MFA but the location change warrants review.',
+      timeline:[
+        {dot:'amber',text:'Login from new geolocation: Lagos, Nigeria',time:'15:33:41'},
+        {dot:'blue',text:'Previous session: London, 3 hours ago — travel unlikely',time:'15:33:42'},
+        {dot:'blue',text:'MFA was valid · session limited to read-only pending review',time:'15:33:43'},
+        {dot:'amber',text:'User contacted for verification · awaiting response',time:'15:34:00'}
+      ]}},
+  { sev:'critical', title:'Zero-day exploit attempt on file server', meta:'Endpoint S-0023 · kernel-level', action:'blocked', actionLabel:'Blocked',
+    detail:{ type:'Zero-Day Exploit', source:'Internal · lateral movement from W-0847', target:'S-0023 (Primary file server)', confidence:95, mitre:'T1210 — Exploitation of Remote Services',
+      summary:'A kernel-level exploit attempt was detected on the primary file server, originating from the already-flagged endpoint W-0847. The exploit targets an unpatched vulnerability in the SMB service. Sentinel\'s behavioural monitoring caught the privilege escalation attempt.',
+      timeline:[
+        {dot:'red',text:'Kernel-level anomaly detected on S-0023 — privilege escalation',time:'16:18:07'},
+        {dot:'red',text:'Source traced to W-0847 (already isolated) — lateral movement',time:'16:18:08'},
+        {dot:'blue',text:'SMB vulnerability identified — no public patch available',time:'16:18:09'},
+        {dot:'teal',text:'SMB service disabled · server isolated · NCSC notified',time:'16:18:12'}
+      ]}},
+  { sev:'high', title:'AI-crafted invoice fraud email', meta:'accounts@corp.co.uk · £48,200', action:'blocked', actionLabel:'Blocked',
+    detail:{ type:'Business Email Compromise', source:'External · compromised supplier domain', target:'accounts@corp.co.uk', confidence:93, mitre:'T1566.002 — Spearphishing Link',
+      summary:'An AI-crafted invoice for £48,200 was sent from a compromised supplier email domain. The invoice matched the format, tone, and payment schedule of legitimate invoices but directed funds to a new account. Sentinel flagged the bank detail change and writing style anomalies.',
+      timeline:[
+        {dot:'amber',text:'Invoice received — matches known supplier template',time:'15:12:33'},
+        {dot:'red',text:'Bank details changed from known account — high risk flag',time:'15:12:34'},
+        {dot:'blue',text:'NLP analysis: writing style 93% likely AI-generated',time:'15:12:35'},
+        {dot:'teal',text:'Invoice quarantined · supplier contacted · accounts team warned',time:'15:12:38'}
+      ]}},
+  { sev:'medium', title:'TLS certificate expiring — staging', meta:'staging.corp.co.uk · 3 days left', action:'investigating', actionLabel:'Alert sent',
+    detail:{ type:'Certificate Expiry', source:'Internal · staging.corp.co.uk', target:'All staging services', confidence:100, mitre:'N/A — Configuration Management',
+      summary:'The TLS certificate for staging.corp.co.uk expires in 3 days. Automated renewal failed due to a DNS validation issue. The DevOps team has been alerted with the specific remediation steps.',
+      timeline:[
+        {dot:'amber',text:'Certificate expiry warning — 3 days remaining',time:'14:00:00'},
+        {dot:'red',text:'Auto-renewal failed — DNS-01 validation timeout',time:'14:00:05'},
+        {dot:'blue',text:'Root cause: DNS provider rate limit during validation',time:'14:00:10'},
+        {dot:'amber',text:'DevOps team alerted with manual renewal instructions',time:'14:01:00'}
+      ]}}
 ];
 
-let demoRunning = false;
-let blocked = 0, investigating = 0, critical = 0, alertTotal = 0;
+/* ── Modal ── */
+function openModal(idx) {
+  const t = threats[idx]; if (!t || !t.detail) return;
+  const d = t.detail;
+  const overlay = document.getElementById('modalOverlay');
+  const modal = document.getElementById('modalContent');
+
+  let timelineHTML = d.timeline.map(tl => `
+    <div class="tl-item">
+      <div class="tl-dot ${tl.dot}"></div><div class="tl-line"></div>
+      <div class="tl-content"><div class="tl-text">${tl.text}</div><div class="tl-time">${tl.time}</div></div>
+    </div>`).join('');
+
+  const confClass = d.confidence > 90 ? 'high' : d.confidence > 70 ? 'med' : 'low';
+
+  modal.innerHTML = `
+    <div class="modal-top">
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+          <span class="modal-sev-badge ${t.sev}">${t.sev}</span>
+          <span style="font-size:11px;color:var(--muted);font-family:var(--mono)">INC-2026-${String(1247+idx).padStart(4,'0')}</span>
+        </div>
+        <div class="modal-title">${t.title}</div>
+        <div class="modal-subtitle">${t.meta}</div>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-grid">
+        <div class="modal-field"><div class="modal-field-label">Threat type</div><div class="modal-field-value">${d.type}</div></div>
+        <div class="modal-field"><div class="modal-field-label">AI Confidence</div><div class="modal-field-value">${d.confidence}%</div><div class="confidence-bar"><div class="confidence-fill ${confClass}" style="width:${d.confidence}%"></div></div></div>
+        <div class="modal-field"><div class="modal-field-label">Source</div><div class="modal-field-value mono">${d.source}</div></div>
+        <div class="modal-field"><div class="modal-field-label">Target</div><div class="modal-field-value mono">${d.target}</div></div>
+      </div>
+      <p style="font-size:13px;line-height:1.6;color:var(--body);margin-bottom:4px">${d.summary}</p>
+      <div class="modal-mitre">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        ${d.mitre}
+      </div>
+      <div class="modal-timeline" style="margin-top:20px">
+        <div class="modal-timeline-title">Incident Timeline</div>
+        ${timelineHTML}
+      </div>
+    </div>`;
+
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('modalOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+
+/* ── Demo engine ── */
+let demoRunning = false, blocked = 0, investigating = 0, critical = 0, alertTotal = 0;
 
 function addBlip(type) {
-  const ring = document.getElementById('scanRing');
-  if (!ring) return;
+  const ring = document.getElementById('scanRing'); if (!ring) return;
   const blip = document.createElement('div');
   blip.className = 'scan-blip ' + type;
-  const angle = Math.random() * Math.PI * 2;
-  const r = 60 + Math.random() * 25;
+  const angle = Math.random() * Math.PI * 2, r = 60 + Math.random() * 25;
   blip.style.left = (90 + Math.cos(angle) * r - 4) + 'px';
   blip.style.top = (90 + Math.sin(angle) * r - 4) + 'px';
   ring.appendChild(blip);
   setTimeout(() => blip.remove(), 3000);
 }
 
-function addAlert(threat) {
-  const feed = document.getElementById('alertFeed');
-  if (!feed) return;
+function addAlert(threat, idx) {
+  const feed = document.getElementById('alertFeed'); if (!feed) return;
   if (feed.querySelector('div[style]')) feed.innerHTML = '';
-
   const item = document.createElement('div');
   item.className = 'alert-item';
+  item.setAttribute('role', 'button');
+  item.setAttribute('tabindex', '0');
+  item.onclick = function(){ openModal(idx); };
+  item.onkeydown = function(e){ if(e.key==='Enter') openModal(idx); };
   item.innerHTML = `
     <div class="alert-sev ${threat.sev}"></div>
     <div class="alert-body">
       <div class="alert-title-text">${threat.title}</div>
       <div class="alert-meta"><span>${threat.meta}</span><span>Just now</span></div>
+      <div class="alert-expand-hint">Click for full analysis →</div>
     </div>
-    <div class="alert-action ${threat.action}">${threat.actionLabel}</div>
-  `;
+    <div class="alert-action ${threat.action}">${threat.actionLabel}</div>`;
   feed.prepend(item);
   alertTotal++;
   document.getElementById('alertCount').textContent = alertTotal;
-
-  if (threat.action === 'blocked') {
-    blocked++;
-    addBlip(threat.sev === 'critical' || threat.sev === 'high' ? 'threat' : 'blocked');
-    setTimeout(() => addBlip('blocked'), 400);
-  } else {
-    investigating++;
-    addBlip('warn');
-  }
+  if (threat.action === 'blocked') { blocked++; addBlip(threat.sev==='critical'||threat.sev==='high'?'threat':'blocked'); setTimeout(()=>addBlip('blocked'),400); }
+  else { investigating++; addBlip('warn'); }
   if (threat.sev === 'critical') critical++;
-
   document.getElementById('blockedCount').textContent = blocked;
   document.getElementById('investCount').textContent = investigating;
   document.getElementById('critCount').textContent = critical;
@@ -844,44 +685,29 @@ function runDemo() {
   const btn = document.getElementById('startBtn');
   btn.disabled = true;
   btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Simulation running…';
-
-  blocked = 0; investigating = 0; critical = 0; alertTotal = 0;
-  document.getElementById('blockedCount').textContent = '0';
-  document.getElementById('investCount').textContent = '0';
-  document.getElementById('critCount').textContent = '0';
-  document.getElementById('alertCount').textContent = '0';
-  document.getElementById('alertFeed').innerHTML = '';
-
-  const badge = document.getElementById('simBadge');
-  badge.textContent = 'Scanning';
-  badge.classList.add('scanning');
-
-  const scanPct = document.getElementById('scanPercent');
-  const scanLbl = document.getElementById('scanLabel');
-  let pct = 0;
-  const scanInterval = setInterval(() => {
-    pct += Math.random() * 4 + 1;
-    if (pct > 100) pct = 100;
-    scanPct.textContent = Math.round(pct) + '%';
-    scanLbl.textContent = pct < 100 ? 'Scanning network' : 'Scan complete';
-    if (pct >= 100) clearInterval(scanInterval);
-  }, 300);
-
-  threats.forEach((threat, i) => {
-    setTimeout(() => {
-      addAlert(threat);
-      if (i === threats.length - 1) {
-        setTimeout(() => {
-          badge.textContent = 'Complete';
-          badge.classList.remove('scanning');
-          btn.disabled = false;
-          btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> Run again';
-          demoRunning = false;
-        }, 1500);
+  blocked=0; investigating=0; critical=0; alertTotal=0;
+  document.getElementById('blockedCount').textContent='0';
+  document.getElementById('investCount').textContent='0';
+  document.getElementById('critCount').textContent='0';
+  document.getElementById('alertCount').textContent='0';
+  document.getElementById('alertFeed').innerHTML='';
+  const badge=document.getElementById('simBadge');
+  badge.textContent='Scanning'; badge.classList.add('scanning');
+  const scanPct=document.getElementById('scanPercent'), scanLbl=document.getElementById('scanLabel');
+  let pct=0;
+  const scanInterval=setInterval(()=>{pct+=Math.random()*4+1;if(pct>100)pct=100;scanPct.textContent=Math.round(pct)+'%';scanLbl.textContent=pct<100?'Scanning network':'Scan complete';if(pct>=100)clearInterval(scanInterval)},300);
+  threats.forEach((threat,i)=>{
+    setTimeout(()=>{
+      addAlert(threat,i);
+      if(i===threats.length-1){
+        setTimeout(()=>{
+          badge.textContent='Complete'; badge.classList.remove('scanning');
+          btn.disabled=false;
+          btn.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg> Run again';
+          demoRunning=false;
+        },1500);
       }
-    }, 1200 + i * 1800);
+    },1200+i*1800);
   });
 }
 </script>
-
-</body></html>
